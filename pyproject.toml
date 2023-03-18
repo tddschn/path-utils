@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "path-utils"
+version = "0.1.2"
+description = ""
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "path_utils" }]
+license = "MIT"
+homepage = "https://github.com/tddschn/path-utils"
+repository = "https://github.com/tddschn/path-utils"
+classifiers = ["Topic :: Utilities"]
+keywords = ["PATH"]
+
+[tool.poetry.scripts]
+list-executables = "path_utils.list_executables:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/path-utils/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+better-exceptions = "^0.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
